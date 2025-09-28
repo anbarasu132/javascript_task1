@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let entry = confirm("Welcome To ABC Bank ATM!\n\nDo you want to Continue?") // Asking the user to continue the process
+        let balance = 100000; //Initial Balance
+        if (entry == "1") {
+            //Asking for Security PIN
+            let pin = prompt("Enter Your PIN:");
+            
+
+            //If the PIN is correct
+            if (pin == "1234") {
+                //Askin the User to enter a Choice
+                let choice = prompt("Choose an option \n1.Withdraw \n2.Deposit\n3.Check Balance");
+                //If 1 Withdrawl
+                if (choice == "1") {
+                    let amount = prompt("Enter the amount (In terms of 100)");
+                    if(balance>amount){
+                    balance -= amount;
+                    let check = confirm("Withdrawl Successful! \n\nDo you want to check your Balance?")
+                    if (check == "1") {
+                        alert("Your Current Balance = " + balance);
+                        location.reload();
+                    }
+                    else {
+                        alert("Thankyou...")
+                        location.reload();
+                    }
+                }
+                else{
+                    alert("Insufficient Balance");
+                    location.reload()
+                }
+                }
+                //If 2 Deposite
+                if (choice == "2") {
+                    amount = prompt("Enter the amount to Deposit (In terms of 100)");
+                    balance += Number(amount);
+                    check = confirm("Deposited Successful! \n\nDo you want to check your Balance?");
+                    if (check == "1") {
+                        alert("You current Balance = " + balance);
+                        location.reload();
+                    }
+                    else {
+                        alert("Thankyou ...");
+                        location.reload();
+                    }
+                }
+                //If 3 Checking Balance
+                if (choice == "3") {
+                    alert("Your currnt Balance = " + balance);
+                    location.reload();
+                }
+
+            }
+            //If the PIN is Wrong
+            else {
+                alert("Invalid PIN");
+                location.reload();
+            }
+        }
+    </script>                                      
+    </script>
+</head>
+<body>
+    <h1>Heyy!! </h1>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let entry =  confirm("                                Welcome to the Quiz App!\n Test your knowledge with multiple-choice questions. Choose the correct answer, track your score, and challenge yourself to improve.\n\n\nClick Ok to Start the Quiz");
+    if(entry == "1")
+    {
+        let score = 0;
+        let q1 = prompt("a.Which keyword is used to declare a block-scoped variable in JavaScript?\n\n1.var\n2.let\n3.const\n4.both b and c");
+        if(q1 == "4")
+    {
+        score+=1;
+    }
+        let q2 = prompt("b.What will typeof null return in JavaScript?\n\n\n1.null\n2.object\n3.undefined\n4.boolean");
+        if(q2 == "2")
+    {
+        score+=1;
+    }
+        let q3 = prompt("c.Which method is used to add an element at the end of an array?\n\n\n1.shift()\n2.unshift()\n3.push()\n4.pop()");
+        if(q3=="3")
+    {
+        score+=1;
+    }
+        alert("Your Score: " +score+"/3");
+        location.reload();
+    }
+    </script>
+</head>
+<body>
+    <h1>Heyy!!</h1>
+</body>
+</html>

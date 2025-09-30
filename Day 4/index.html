@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  
+   
+</head>
+<body>
+    <header>
+    <h1>🎓 Student Personal Dashboard</h1>
+</header>
+<main>
+
+   
+    <section id="profile">
+        <h2>1️. Profile</h2>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <input type="number" id="birthYear" placeholder="Enter your birth year"><br>
+        <input type="text" id="city" placeholder="Enter your city"><br>
+        <button onclick="saveProfile()">Save Profile</button>
+        <div class="output" id="profileOutput"></div>
+    </section>
+
+
+    <section id="ageChecker">
+        <h2>2️. Age Checker</h2>
+        <button onclick="checkAge()">Check Age & Eligibility</button>
+        <div class="output" id="ageOutput"></div>
+    </section>
+
+   
+    <section id="greeting">
+        <h2>3️. Personalized Greeting</h2>
+        <button onclick="showGreeting()">Show Greeting</button>
+        <div class="output" id="greetOutput"></div>
+    </section>
+
+   
+    <section id="calculator">
+        <h2>4️. Calculator</h2>
+        <input type="number" id="num1" placeholder="Enter first number"><br>
+        <input type="number" id="num2" placeholder="Enter second number"><br>
+        <button onclick="calculate('+')">Add (+)</button><br>
+        <button onclick="calculate('-')">Subtract (-)</button><br>
+        <button onclick="calculate('*')">Multiply (*)</button><br>
+        <button onclick="calculate('/')">Divide (/)</button><br>
+        <div class="output" id="calcOutput"></div>
+    </section>
+
+
+    <section id="quotes">
+        <h2>5️. Motivational Quote</h2>
+        <button onclick="showQuote()">Get Random Quote</button>
+        <div class="output" id="quoteOutput"></div>
+    </section>
+
+ 
+    <section id="jsonInfo">
+        <h2>6️. JSON</h2>
+        <button onclick="showJSON()">Show JSON</button>
+        <div class="output" id="jsonOutput"></div>
+    </section>
+
+</main>
+
+</body>
+</html>

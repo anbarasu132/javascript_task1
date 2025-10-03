@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+  <h1> Virtual Event Registration & Score Tracker </h1>
+</header>
+
+<div class="container">
+
+
+  <div class="box" id="registration">
+    <h2>Step 1: Register for the Event</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <br><br>
+    <button onclick="register()">Register</button>
+    <p id="regError" class="error"></p>
+  </div>
+
+
+  <div class="box hidden" id="quiz">
+    <h2>Step 2: Answer the Quiz</h2>
+    <form id="quizForm">
+      <div id="questions"></div>
+      <br>
+      <button type="button" onclick="submitQuiz()">Submit Answers</button>
+    </form>
+  </div>
+
+
+  <div class="box hidden" id="result">
+    <h2>Step 3: Your Result</h2>
+    <div class="result-box">
+      <p id="summary"> Calculating result...</p>
+    </div>
+    <h3>JSON Data:</h3>
+    <pre id="jsonOutput"></pre>
+    <br>
+    <button onclick="restart()"> Restart</button>
+  </div>
+
+</div>
+
+</body>
+</html>

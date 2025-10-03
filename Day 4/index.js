@@ -1,6 +1,5 @@
-let student = {}; // Object to store student info
+let student = {}; 
 
-// Save Profile
 function saveProfile() {
     try {
         const name = document.getElementById('name').value.trim();
